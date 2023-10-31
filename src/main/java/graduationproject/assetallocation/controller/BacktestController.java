@@ -21,7 +21,7 @@ public class BacktestController {
 
     private final AaService aaService;
 
-    @PostMapping("/backtest_static")
+    @PostMapping("/backtest-static")
     public ResponseEntity<BacktestResultDTO> SaaBacktest(@RequestBody SaaDTO saaDTO){
 
         BacktestResultDTO backtestResultDTO = BacktestResultDTO.builder()
@@ -34,7 +34,7 @@ public class BacktestController {
         return ResponseEntity.ok(backtestResultDTO);
     }
 
-    @PostMapping("/backtest_dynamic")
+    @PostMapping("/backtest-dynamic")
     public ResponseEntity<BacktestResultDTO> DaaBacktest(@RequestBody DaaDTO daaDTO){
 
         BacktestResultDTO backtestResultDTO = BacktestResultDTO.builder()
