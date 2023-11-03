@@ -41,6 +41,8 @@ public class SecurityConfig {
         http
                 .csrf(AbstractHttpConfigurer::disable)
 
+                .cors(AbstractHttpConfigurer::disable)
+
                 .exceptionHandling((exceptionHandling)-> exceptionHandling
                         .accessDeniedHandler(jwtAccessDeniedHandler)
                         .authenticationEntryPoint(jwtAuthenticationEntryPoint))
