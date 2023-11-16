@@ -21,7 +21,6 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class BacktestController {
 
-    private final AaService aaService;
     private final RestTemplate restTemplate;
 
 

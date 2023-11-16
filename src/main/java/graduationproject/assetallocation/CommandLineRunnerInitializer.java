@@ -32,7 +32,7 @@ public class CommandLineRunnerInitializer implements CommandLineRunner {
     private final EntityManager em;
     @Override
     public void run(String... args) throws Exception {
-        String[] assetArray = {"SPY", "QQQ","VT", "VEU", "EFA", "EEM", "VWO", "IWD", "IFW"
+        String[] assetArray = {"SPY", "QQQ","VT", "VEU", "EFA", "EEM", "VWO", "IWD", "IWF"
                 , "IWM", "IWN", "IWO", "MTUM","SCZ", "XLE", "XLB", "XLI", "XLY", "XLP", "XLV", "XLF"
                 , "XLK", "XLU", "VGK", "EZU", "EWJ" // STOCK LIST
                 , "IEF", "TLT", "TIP", "LQD", "HYG", "BNDX", "EMB", "BWX" // BOND LIST
