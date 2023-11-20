@@ -58,6 +58,7 @@ public class SecurityConfig {
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 
                 .authorizeHttpRequests((authz) -> authz
+                        .requestMatchers(new AntPathRequestMatcher("/**", HttpMethod.OPTIONS.toString())).permitAll()
                 .requestMatchers(new AntPathRequestMatcher("/user/**")).hasRole("USER")
                 .requestMatchers(new AntPathRequestMatcher("/admin/**")).hasRole("ADMIN")
                 .requestMatchers(new AntPathRequestMatcher("/**")).permitAll())
